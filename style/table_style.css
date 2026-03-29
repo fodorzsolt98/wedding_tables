@@ -2,7 +2,7 @@
 {
     width: 75%;
     margin: auto; 
-    color: white;
+    color: rgb(6, 6, 111);
     font-size: 18px;
 }
 
@@ -11,7 +11,85 @@
   text-align:center;
 }
 
+.justified
+{
+  text-align:justify;
+}
+
 h1
 {
   font-size: 32px;
+}
+
+#table_num 
+{
+  height: 40px;  
+  font-size: 18px
+}
+
+#kep1 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px; /* állítható */
+
+    transform: rotate(180deg);
+
+    z-index: -1; /* EZ teszi háttérré */
+}
+
+header 
+{
+    position: relative;
+    z-index: 1;
+}
+
+#kep2 
+{
+    position: absolute;
+    bottom: 0;   /* lent */
+    left: 0;     /* bal oldalt */
+    width: 250px;
+
+    z-index: -1; /* háttér */
+    pointer-events: none; /* ne zavarja a kattintást */
+}
+
+body 
+{
+  display: flex;
+  justify-content: center; /* vízszintesen */
+  align-items: center;     /* függőlegesen */
+  height: 100vh;           /* teljes képernyő */
+  margin: 0;
+}
+
+input#table_num {
+    color: rgb(6, 6, 111);                 /* szöveg színe */
+    border: 3px solid rgb(6, 6, 111);      /* vastag keret */
+    border-radius: 10px;          /* lekerekített sarkok */
+    padding: 5px 10px;            /* belső térköz */
+    font-size: 20px;              /* olvasható méret */
+    width: 50px;                  /* fix szélesség a számhoz */
+    text-align: center;           /* szám középre */
+}
+
+button {
+    background-color: #001f5b;      /* sötét navy kék */
+    color: white;                   /* fehér szöveg */
+    border: none;                   /* alap keret eltüntetése */
+    border-radius: 12px;            /* lekerekített sarkok */
+    padding: 10px 20px;             /* kényelmes belső tér */
+    font-size: 16px;                /* olvasható szöveg */
+    cursor: pointer;                /* mutató kurzor hoverkor */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* finom árnyék */
+    transition: all 0.3s ease;      /* sima animáció hoverkor */
+}
+
+/* Hover effekt */
+button:hover {
+    background-color: #003080;      /* világosabb navy hoverkor */
+    transform: translateY(-2px);    /* kis emelkedés */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* árnyék erősítése */
 }
