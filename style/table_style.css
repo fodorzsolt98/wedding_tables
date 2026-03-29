@@ -4,6 +4,8 @@
     margin: auto; 
     color: rgb(6, 6, 111);
     font-size: 18px;
+    word-break: break-word;        /* hosszú szavak törése */
+    overflow-wrap: break-word;     /* extra biztonság a régebbi böngészőknek */
 }
 
 .centered
