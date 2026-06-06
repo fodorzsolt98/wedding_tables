@@ -2,7 +2,7 @@
 {
     width: 75%;
     margin: auto; 
-    color: rgb(6, 6, 111);
+    color: rgb(8, 30, 107);
     font-size: 18px;
     overflow-wrap: break-word;     /* extra biztonság a régebbi böngészőknek */
     hyphens: auto;
@@ -73,8 +73,8 @@ body
 }
 
 input#table_num {
-    color: rgb(6, 6, 111);                 /* szöveg színe */
-    border: 3px solid rgb(6, 6, 111);      /* vastag keret */
+    color: rgb(8, 30, 107);;                 /* szöveg színe */
+    border: 3px solid rgb(8, 30, 107);;      /* vastag keret */
     border-radius: 10px;          /* lekerekített sarkok */
     padding: 5px 10px;            /* belső térköz */
     font-size: 20px;              /* olvasható méret */
@@ -99,4 +99,9 @@ button:hover {
     background-color: #003080;      /* világosabb navy hoverkor */
     transform: translateY(-2px);    /* kis emelkedés */
     box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* árnyék erősítése */
+}
+
+ul
+{
+    list-style-type:"⬥";
 }
