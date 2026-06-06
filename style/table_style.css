@@ -1,16 +1,28 @@
 .content 
 {
-    width: 75%;
+    width: 100%;
     margin: auto; 
     color: rgb(8, 30, 107);
     font-size: 18px;
     overflow-wrap: break-word;     /* extra biztonság a régebbi böngészőknek */
     hyphens: auto;
 
+    background-image: url("../W_sarokelem.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 250px auto;
+
+
     /* böngésző támogatás miatt prefixekkel */
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     word-break: break-word;        /* hosszú szavak törése */
+}
+
+.content_text 
+{
+  margin: auto;
+  width: 75%;
 }
 
 .centered
@@ -50,17 +62,6 @@ header
 {
     position: relative;
     z-index: 1;
-}
-
-#kep2 
-{
-    position: absolute;
-    bottom: 0;   /* lent */
-    left: 0;     /* bal oldalt */
-    width: 250px;
-
-    z-index: -1; /* háttér */
-    pointer-events: none; /* ne zavarja a kattintást */
 }
 
 body 
