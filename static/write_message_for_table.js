@@ -1,5 +1,5 @@
 let fault_counter = 0;
-let fault_list = ["Egy számot írj be, ez nem az!", "Ez még mindig nem egy szám!", "Nem ez még továbbra sem szám!", "Kezdem reménytelennek érezni a helyzetet...", "Nem még mindig nem szám. Kicsit sok lett a pia?", "Szerintem hagyjuk, menj inkább táncolni!"]
+let fault_list = ["Egy számot írj be, ez nem az!", "Ez még mindig nem egy szám!", "Nem, ez még továbbra sem szám!", "Kezdem reménytelennek érezni a helyzetet...", "Nem, még mindig nem szám. Kicsit sok lett a pia?", "Szerintem hagyjuk, menj inkább táncolni!"]
 
 function write_message_for_table()
 {
@@ -16,7 +16,7 @@ function write_message_for_table()
         {
             table_message_field.innerHTML = "<ul>" +
                                             "<li>Köszönjük a szerepléseteket a szertartások során. Most már letudtátok a feladatotokat, csak az maradt hátra, hogy élvezzétek az estét és érezzétek jól magatokat!</li>" + 
-                                            "<li>Habár tudjuk, hogy a tánc és mulatozás nem éppen a kedvenc időtöltésetek, azért ha meggondoljátok magatok egy-két számra szívesen látunk a parketten!</li>" + 
+                                            "<li>Habár tudjuk, hogy a tánc és mulatozás nem éppen a kedvenc időtöltésetek, azért ha meggondoljátok magatok egy-két számra szívesen látunk mindenkit a parketten!</li>" + 
                                             "<li>Ha nyugodtabb körülményekre vágytok, akkor érdemes kinézni az udvarba megsimogatni a helyi kutyákat vagy lőni egy képet a polaroid kamerával az emlékkönyvünkbe!</li>" + 
                                             "<li>Mamának lehet nem a legoptimálisabb a svédasztal, segítsétek légyszi, nehogy amiatt maradjon le a jó falatokról, mert messze vannak!</li>" +
                                             "<li>Sajnos térerő nem sok van a tanyán, reméljük ez nem probléma a gyerekek telefonos játékainak.</li>" +
@@ -28,14 +28,16 @@ function write_message_for_table()
                                             "<li>Köszönjük mindenkinek a szereplést, akire rá lett ruházva ez a feladat! Most már csak a szórakozás maradt hátra!</li>" + 
                                             "<li>A gyerekeknek mindenképp javasoljuk a játszósarkot vagy a helyi kutyusokat az udvaron, ha már sok lenne nekik a benti hangulat.</li>" +
                                             "<li>Ezen kívül egy cigire és egy polaroid kép készítésére is tökéletesen alkalmas a kinti környezet!</li>" + 
-                                            "<li>Remélem azért a tánctéren vagy épp a bárpult közelében is gyakran találkozunk a társasággal majd! Nem szeretnék lustálkodó bárpultosokat látni és  ebben szerintem van az asztalnál olyan, aki tud segíteni.</li>" + 
+                                            "<li>Ha nagymamának szüksége van valamire, segítsetek légyszi, nehogy azért maradjon le pár finom falatról vagy jó italról, mert messze van a svédasztal.</li>" +
+                                            "<li>Legjobb tudásunk szerint van itt pár ember, aki szívesen megdolgoztatja a pultosokat egy kis sörcsapolással vagy fröccskeveréssel, ne hagyjátok őket túl sokat pihenni!</li>" + 
+                                            "<li>A táncteret se hagyjátok üresen! Lizi mindenképp mutassa meg a társaságnak, hogy is kell ezt csinálni!</li>" + 
                                             "</ul>";
         }
         else if(table_num == 3)
         {
             table_message_field.innerHTML = "<ul>" + 
                                             "<li>Egy közös koszorúslányos képet mindenképp szívesen látnánk az emlékkönyvünkbe!</li>" + 
-                                            "<li> A tánctéren vagy a bárpultnál fussunk párszor össze az este folyamán! Tudjuk, hogy vannak olyanok az asztalnál jó páran akitől ezek nem állnak távol.</li>" + 
+                                            "<li> A tánctéren vagy a bárpultnál fussunk párszor össze az este folyamán! Tudjuk, hogy vannak olyanok az asztalnál jó páran akiktől ezek nem állnak távol.</li>" + 
                                             "<li>Ha a zenétől nem vagytok elragadtatva, nyugodtan lehet számot kérni a DJ-től. Biztos szívesen játszik egy kis High School Musical-t is!</li>" + 
                                             "<li>Reméljük a hangulat nem okoz majd csalódást, különösen azoknak, akik még nem voltak lakodalmon, főleg nem magyaron!</li>" + 
                                             "</ul>";
@@ -44,9 +46,9 @@ function write_message_for_table()
         {
             table_message_field.innerHTML = "<ul>" + 
                                             "<li>Ha Kriszti torka kezd száradni, akkor egy pálinkával mindenképp legyen megöntözve!</li>" + 
-                                            "<li>Ha nagymamának szüksége van valamire segítsetek, vagy szóljatok nekünk légyszi, nehogy azért maradjon le pár finom falatról vagy jó italról, mert messze van a svédasztal.</li>" + 
+                                            "<li>Persze a kicsik se maradjanak szomjasak, üdítő is van bőven, még ha talán XIXO nincs is a kínálatban.</li>" + 
                                             "<li>A gyerekek számára ne feledkezzetek meg a játszósarokról, illetve kint az udvaron a helyi kutyák vagy a fénykép készítés az emlékkönyvbe is egy jó program lehet, ha már elég volt a buliból bent.</li>" + 
-                                            "<li>Olyan embereket is ismerünk itt, akik úgy tudjuk szívesen megdolgoztatják a pultosokat egy kis sörcsapolással vagy fröccskeveréssel, ne hagyjátok őket túl sokat pihenni!</li>" + 
+                                            "<li>Reméljük az ételek ízleni fognak, bár tudjuk, hogy bármennyire igyekeznek is a szakácsok Margit gulyásához akkor sem érhetnek fel!.</li>" + 
                                             "</ul>";
         }
         else if(table_num == 5)
@@ -96,8 +98,8 @@ function write_message_for_table()
         {
             table_message_field.innerHTML = "<ul>" + 
                                             "<li>Minden nyaraláson az első este szokott a legerősebb lenni, ezt az alkalmat pedig szeretném kérni, hogy tekintsük egy egy estés nyaralásnak!</li>" + 
-                                            "<li>A bárpultosok lefoglalásában különös tekintettel számítok a társaságra, jó lenne sok üres boros üveget és rirkán pihenő sörcsapot látni!</li>" + 
-                                            "<li>A táncparketten is szívesen látnánk benneteket, eddig úgy tapasztaltam vannak az asztalnál  akik nem idegenkednek itt a hangulat felrázásától!</li>" + 
+                                            "<li>A bárpultosok lefoglalásában különös tekintettel számítok a társaságra, jó lenne sok üres boros üveget és ritkán pihenő sörcsapot látni!</li>" + 
+                                            "<li>A táncparketten is szívesen látnánk benneteket, eddig úgy tapasztaltam vannak az asztalnál akik nem idegenkednek a hangulat felrázásától!</li>" + 
                                             "<li>Ha pedig keveslitek az ABBA-t mindenképp adjátok a DJ tudtára.</li>" + 
                                             "<li>Pihenésképpen, ha egy közös csapatos képet is csináltok az emlékkönyvbe annak külön örülünk!</li>" + 
                                             "<li>Illetve a torta, sütik és fagyi is fogyjon, úgy tudjuk van aki szereti az édeset az asztalnál. De azért arra vigyázzunk, hogy sörivás rovására ne menjen!</li>" + 
